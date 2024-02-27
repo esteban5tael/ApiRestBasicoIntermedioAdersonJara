@@ -1,0 +1,40 @@
+//para la creacion de cliente
+// /public/api/clients
+
+{
+    "name":"Registro",
+    "surname":"Prueba",
+    "phone":"3003003030",
+    "email":"registro@prueba.com",
+    "city":"Ciudad de Prueba",
+    "address":"Dirección de Prueba"
+}
+
+{
+    "name": "Registration",
+    "surname": "Test",
+    "phone": "3003003030",
+    "email": "registration@test.com",
+    "city": "Test City",
+    "address": "Test Address"
+}
+
+
+{
+    "name": "John",
+    "surname": "Doe",
+    "phone": "1234567890",
+    "email": "john.doe@example.com",
+    "city": "New York",
+    "address": "123 Main Street"
+}
+
+
+{
+    "name": "Alice",
+    "surname": "Smith",
+    "phone": "9876543210",
+    "email": "alice.smith@example.com",
+    "city": "Los Angeles",
+    "address": "456 Elm Street"
+}
