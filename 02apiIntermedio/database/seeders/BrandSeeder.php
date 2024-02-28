@@ -13,10 +13,10 @@ class BrandSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i=0; $i <3 ; $i++) { 
+        for ($i = 1; $i <= 3; $i++) {
             Brand::create([
-                'name'=>'brand  '.$i,
-            'description'=>'brand description '.$i
+                'name' => 'Brand  ' . $i,
+                'description' => 'Brand Description ' . $i
             ]);
         }
     }

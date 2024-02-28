@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('product_purchases', function (Blueprint $table) {
+        Schema::create('product_purchase', function (Blueprint $table) {
             $table->id();
 
             $table->unsignedBigInteger('purchase_id');
@@ -20,9 +20,9 @@ return new class extends Migration
             $table->unsignedBigInteger('product_id');
             $table->foreign('product_id')->references('id')->on('products')->onUpdate('cascade')->onDelete('cascade');
 
-            $table->integer('price', 12, 2);
-            $table->integer('quantity', 12, 2);
-            $table->integer('subtotal', 12, 2);
+            $table->float('price', 12, 2);
+            $table->float('quantity', 12, 2);
+            $table->float('subtotal', 12, 2);
 
             $table->timestamps();
         });

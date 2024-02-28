@@ -15,14 +15,14 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i = 1; $i <= 9; $i++) {
+        for ($i = 1; $i <= 20; $i++) {
             Product::create([
                 'category_id' => Category::all()->random(1)->first()->id,
                 'brand_id' => Brand::all()->random(1)->first()->id,
                 'name' => 'Product :0' . $i,
                 'description' => 'Product :0' . $i . ' Description',
-                'price' => '10000' . $i,
-                'available_quantity' => ($i * 2),
+                'price' => $i,
+                'available_quantity' => 5,
             ]);
         }
     }

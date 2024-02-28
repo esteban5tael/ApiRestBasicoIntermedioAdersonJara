@@ -9,6 +9,11 @@ class Purchase extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'subtotal',
+        'total',
+    ];
+
     public function products()
     {
         return $this->belongsToMany(Product::class)

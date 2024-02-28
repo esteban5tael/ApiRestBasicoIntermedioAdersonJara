@@ -13,10 +13,10 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i=0; $i <3 ; $i++) { 
+        for ($i = 0; $i < 3; $i++) {
             Category::create([
-                'name'=>'brand  '.$i,
-            'description'=>'brand description '.$i
+                'name' => 'Category: 0' . $i,
+                'description' => 'Category: 0' . $i . ' Description ',
             ]);
         }
     }
