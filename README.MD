@@ -1,6 +1,3 @@
-¡Claro que sí! Aquí tienes una versión refinada de tu README:
-
----
 
 # API REST en Laravel 10 - Nivel Básico e Intermedio
 
